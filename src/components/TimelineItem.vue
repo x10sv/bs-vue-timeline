@@ -1,12 +1,14 @@
 <template>
-  <b-row no-gutters class="justify-content-md-around align-items-start timeline-nodes">
+  <b-row no-gutters class="justify-content-around align-items-start timeline-nodes">
     <b-col
-      col="10"
+      cols="9"
       sm="9"
       md="5"
       offset="3"
+      offset-sm="3"
       offset-md="0"
       order="3"
+      order-sm="3"
       order-md="1"
       class="timeline-content"
     >
@@ -15,22 +17,24 @@
       <p v-html="itemTimeline.content"></p>
     </b-col>
     <b-col
-      col="1"
+      cols="1"
       sm="1"
       md="1"
       offset="1"
+      offset-sm="1"
       offset-md="0"
       order="1"
-      class="timeline-image text-md-center mx-md-4"
+      class="timeline-image text-sm-center mx-md-4"
     >
       <img v-bind:src="'img/' + itemTimeline.image" class="img-fluid" :alt="itemTimeline.title">
     </b-col>
     <b-col
-      col="10"
+      cols="9"
       sm="9"
       md="5"
       order="2"
       offset="1"
+      offset-sm="1"
       offset-md="0"
       order-md="3"
       class="py-3 timeline-date"
