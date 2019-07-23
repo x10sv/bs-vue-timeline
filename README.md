@@ -19,13 +19,13 @@ This is a simple timeline alternative build using `vue`, `boostrap-vue` and `mom
 
 ### Future Plans:
 
-## Before initial release
+**Before initial release**
 
 - Make it usable in other projects using `npm` and `yarn`
-- Fix display on smaller devices,
+- Fix image size on smaller devices,
 - Customize the location of the images,
 
-## Later on
+**Later on**
 
 - Create separator between sections in timeline (for example workplaces and studies),
 - Make duration separator between years and months a prop,

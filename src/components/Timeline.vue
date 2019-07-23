@@ -52,7 +52,7 @@ export default {
 }
 
 .timeline h2 {
-  padding: 5px;
+  padding: 5px 15px;
   font-size: 1em;
   background-color: #eee;
   margin-top: -8px;
