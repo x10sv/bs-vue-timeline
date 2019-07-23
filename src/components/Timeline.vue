@@ -1,8 +1,6 @@
 <template>
   <div class="timeline">
-      <div v-for="(itemTimeline, timelineIndex) in timelineItems" :key="timelineIndex">
-        <TimelineItem :item-timeline="itemTimeline"/>
-      </div>
+        <TimelineItem v-for="(itemTimeline, timelineIndex) in timelineItems" :key="timelineIndex" :item-timeline="itemTimeline"/>
   </div>
 </template>
 
