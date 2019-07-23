@@ -1,5 +1,5 @@
 {
-  "name": "codesandbox",
+  "name": "bootstrap-vue-timeline",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -44,5 +44,11 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "keywords": [
+    "timeline",
+    "bootstrap-vue",
+    "vuejs"
+  ],
+  "description": "boostrap-vue-timeline"
 }
