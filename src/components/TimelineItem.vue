@@ -1,17 +1,17 @@
 <template>
-  <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-    <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
-      <h3 class=" text-light" v-html="itemTimeline.title"></h3>
-      <h2 class=" text-light" v-html="itemTimeline.subtitle"></h2>
+  <b-row no-gutters class="justify-content-end justify-content-md-around align-items-start timeline-nodes">
+    <b-col col="10" md="5" order="3" order-md="1" class="timeline-content">
+      <h3 class="text-light" v-html="itemTimeline.title"></h3>
+      <h2 class="text-light" v-html="itemTimeline.subtitle"></h2>
       <p v-html="itemTimeline.content"></p>
-    </div>
-    <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
-      <img :src="itemTimeline.image" class="img-fluid" alt="img">
-    </div>
-    <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
-      <time v-html="item.formatedTime"></time>
-    </div>
-  </div>
+    </b-col>
+    <b-col col="2" sm="1" order="2" class="px-md-3 timeline-image text-md-center">
+      <img v-bind:src="'img/' + itemTimeline.image" class="img-fluid" :alt="itemTimeline.title">
+    </b-col>
+    <b-col col="10" md="5" order="1" order-md="3" class="py-3 timeline-date">
+      <time v-html="itemTimeline.formatedTime"></time>
+    </b-col>
+  </b-row>
 </template>
 
 

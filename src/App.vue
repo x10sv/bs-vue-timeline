@@ -21,7 +21,7 @@ export default {
         title: 'Microsoft',
         subtitle: 'System Engineer',
         content: 'lorem ipsum dolor sin amet',
-        image: '../public/img/microsoft.png'
+        image: 'microsoft.png'
       },
         {
         from: new Date(2009,5),
@@ -29,7 +29,7 @@ export default {
         title: 'Oracle',
         subtitle: 'Programmer',
         content: 'lorem ipsum dolor sin amet',
-        image: '../public/img/oracle.png'
+        image: 'oracle.png'
       },
       {
         from: new Date(2000,3),
@@ -37,7 +37,7 @@ export default {
         title: 'Google Inc.',
         subtitle: 'Internship / Volunteer',
         content: 'lorem ipsum dolor sin amet',
-        image: '../public/img/google.png'
+        image: 'google.png'
       },
     ]
   })
