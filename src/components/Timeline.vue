@@ -12,6 +12,7 @@
 
 <script>
 import TimelineItem from "./TimelineItem.vue";
+import cssVars from 'css-vars-ponyfill';
 
 export default {
   name: "Timeline",
@@ -23,13 +24,14 @@ export default {
     }
   }
 };
+
+cssVars({
+  
+});
+
 </script>
 
 <style>
-:root {
-  --blue: #0288d1;
-  --box-shadow1: 0px 0px 10px 2px rgba(90, 90, 90, 0.15);
-}
 
 .timeline {
   padding: 50px 0;
@@ -48,19 +50,19 @@ export default {
 }
 .timeline h3 {
   font-weight: lighter;
-  background: var(--blue);
+  background: var(--bvt-primary-color, #0288d1);
 }
 
 .timeline h2 {
   padding: 5px 15px;
   font-size: 1em;
-  background-color: #eee;
+  background-color: var(--bvt-bg-secondary, #ddd);
   margin-top: -8px;
 }
 
 .timeline p,
 .timeline time {
-  color: var(--blue);
+  color: var(--bvt-timeline-text-color, #333);
 }
 .timeline::before {
   content: "";
@@ -69,17 +71,21 @@ export default {
   top: 0;
   left: 50%;
   width: 0;
-  border-left: 1px solid var(--blue);
+  border-left: 1px solid var(--bvt-timeline-color, #aaa);
   height: 100%;
   z-index: 1;
   transform: translateX(-50%);
 }
 .timeline-content {
-  border: 1px solid var(--blue);
+  background-color: #fff;
+  border: 1px solid var(--bvt-border-color, #aaa);
   position: relative;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0px 3px 5px 0px rgba(10, 55, 90, 0.2);
+  box-shadow: var(--bvt-box-shadow1, 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24));
 }
+.timeline-date {
+    padding: 5px 15px !important;
+  }
 .timeline-nodes:nth-child(odd) h3,
 .timeline-nodes:nth-child(odd) h2,
 .timeline-nodes:nth-child(odd) p {
@@ -98,7 +104,7 @@ export default {
   top: 5%;
   left: 100%;
   width: 0;
-  border-left: 10px solid var(--blue);
+  border-left: 10px solid var(--bvt-primary-color, #0288d1);
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
@@ -108,7 +114,7 @@ export default {
   top: 5%;
   right: 100%;
   width: 0;
-  border-right: 10px solid var(--blue);
+  border-right: 10px solid var(--bvt-primary-color, #0288d1);
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
@@ -120,7 +126,7 @@ export default {
   content: "";
   width: 100px;
   height: 100px;
-  border: 1px solid var(--blue);
+  border: 1px solid var(--bvt-timeline-color, #aaa);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -155,7 +161,7 @@ export default {
     top: 0;
     left: 8.333333%;
     width: 0;
-    border-left: 1px solid var(--blue);
+    border-left: 1px solid var(--bvt-timeline-color ,#aaa);
     height: 100%;
     z-index: 1;
     transform: translateX(-50%);
@@ -179,7 +185,7 @@ export default {
     right: 100%;
     width: 0;
     border-left: 0;
-    border-right: 10px solid var(--blue);
+    border-right: 10px solid var(--bvt-primary-color, #0288d1);
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }
@@ -189,7 +195,7 @@ export default {
     top: 5%;
     right: 100%;
     width: 0;
-    border-right: 10px solid var(--blue);
+    border-right: 10px solid var(--bvt-primary-color, #0288d1);
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }
@@ -200,7 +206,7 @@ export default {
 
 span.duration {
   margin-left: 10px;
-  color: var(--blue);
+  color: var(--bvt-duration-color, #0288d1);
   font-style: italic;
 }
 </style>

@@ -2,13 +2,10 @@
   <b-row no-gutters class="justify-content-around align-items-start timeline-nodes">
     <b-col
       cols="9"
-      sm="9"
       md="5"
       offset="3"
-      offset-sm="3"
       offset-md="0"
       order="3"
-      order-sm="3"
       order-md="1"
       class="timeline-content"
     >
@@ -18,10 +15,8 @@
     </b-col>
     <b-col
       cols="1"
-      sm="1"
       md="1"
       offset="1"
-      offset-sm="1"
       offset-md="0"
       order="1"
       class="timeline-image text-sm-center mx-md-4"
@@ -30,11 +25,9 @@
     </b-col>
     <b-col
       cols="9"
-      sm="9"
       md="5"
       order="2"
       offset="1"
-      offset-sm="1"
       offset-md="0"
       order-md="3"
       class="py-3 timeline-date"
