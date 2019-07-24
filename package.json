@@ -1,15 +1,15 @@
 {
-  "name": "vue-bs-timeline2",
+  "name": "bs-vue-timeline",
   "version": "0.1.0",
   "private": false,
-  "description": "An alternative responsive boostrap timeline",
+  "description": "An alternative responsive boostrap vue timeline",
   "author": "Angelin Calu",
   "license": "MIT",
   "scripts": {
     "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
-    "build:umd": "rollup --config rollup.config.js --format umd --file dist/vue-bs-timeline.umd.js",
-    "build:es": "rollup --config rollup.config.js --format es --file dist/vue-bs-timeline.esm.js",
-    "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/vue-bs-timeline.min.js"
+    "build:umd": "rollup --config rollup.config.js --format umd --file dist/bs-vue-timeline.umd.js",
+    "build:es": "rollup --config rollup.config.js --format es --file dist/bs-vue-timeline.esm.js",
+    "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/bs-vue-timeline.min.js"
   },
   "files": [
     "dist/*"
@@ -63,18 +63,18 @@
     "bootstrap-vue",
     "vuejs"
   ],
-  "main": "dist/vue-bs-timeline.umd.js",
-  "module": "dist/vue-bs-timeline.js",
-  "unpkg": "dist/vue-bs-timeline.min.js",
+  "main": "dist/bs-vue-timeline.umd.js",
+  "module": "dist/bs-vue-timeline.js",
+  "unpkg": "dist/bs-vue-timeline.min.js",
   "browser": {
-    "./sfc": "src/vue-bs-timeline.vue"
+    "./sfc": "src/bs-vue-timeline.vue"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AngelinCalu/vue-bs-timeline.git"
+    "url": "git+https://github.com/AngelinCalu/bs-vue-timeline.git"
   },
   "bugs": {
-    "url": "https://github.com/AngelinCalu/vue-bs-timeline/issues"
+    "url": "https://github.com/AngelinCalu/bs-vue-timeline/issues"
   },
-  "homepage": "https://github.com/AngelinCalu/vue-bs-timeline"
+  "homepage": "https://github.com/AngelinCalu/bs-vue-timeline"
 }

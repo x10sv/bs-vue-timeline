@@ -12,10 +12,10 @@
 
 <script>
 import TimelineItem from "./TimelineItem.vue";
-import cssVars from 'css-vars-ponyfill';
+import cssVars from "css-vars-ponyfill";
 
 export default {
-  name: "VueBSTimeline",
+  name: "VueTimeline",
   components: { TimelineItem },
   props: {
     timelineItems: {
@@ -25,14 +25,10 @@ export default {
   }
 };
 
-cssVars({
-  
-});
-
+cssVars({});
 </script>
 
 <style>
-
 .timeline {
   padding: 50px 0;
   position: relative;
@@ -81,11 +77,15 @@ cssVars({
   border: 1px solid var(--bvt-border-color, #aaa);
   position: relative;
   border-radius: 0 0 10px 10px;
-  box-shadow: var(--bvt-box-shadow1, 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24));
+  box-shadow: var(
+    --bvt-box-shadow1,
+    0 1px 6px rgba(0, 0, 0, 0.12),
+    0 1px 4px rgba(0, 0, 0, 0.24)
+  );
 }
 .timeline-date {
-    padding: 5px 15px !important;
-  }
+  padding: 5px 15px !important;
+}
 .timeline-nodes:nth-child(odd) h3,
 .timeline-nodes:nth-child(odd) h2,
 .timeline-nodes:nth-child(odd) p {
@@ -161,7 +161,7 @@ cssVars({
     top: 0;
     left: 8.333333%;
     width: 0;
-    border-left: 1px solid var(--bvt-timeline-color ,#aaa);
+    border-left: 1px solid var(--bvt-timeline-color, #aaa);
     height: 100%;
     z-index: 1;
     transform: translateX(-50%);
