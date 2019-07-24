@@ -1,16 +1,19 @@
 {
-  "name": "vue-bs-timeline",
+  "name": "vue-bs-timeline2",
   "version": "0.1.0",
   "private": false,
   "description": "An alternative responsive boostrap timeline",
   "author": "Angelin Calu",
   "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "lint": "vue-cli-service lint",
-    "build": "bili --name index --plugin vue --vue.css false"
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config rollup.config.js --format umd --file dist/vue-bs-timeline.umd.js",
+    "build:es": "rollup --config rollup.config.js --format es --file dist/vue-bs-timeline.esm.js",
+    "build:unpkg": "rollup --config rollup.config.js --format iife --file dist/vue-bs-timeline.min.js"
   },
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "dependencies": {
     "bootstrap-vue": "2.0.0-rc.27",
     "css-vars-ponyfill": "2.0.2",
@@ -24,14 +27,22 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "rollup": "^1.17.0",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-vue": "^5.0.1",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,
     "env": {
       "node": true
     },
-    "extends": ["plugin:vue/essential", "eslint:recommended"],
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
     "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
@@ -42,9 +53,22 @@
       "autoprefixer": {}
     }
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
-  "keywords": ["timeline", "bootstrap-vue", "vuejs"],
-  "main": "dist/vue-bs-timeline.min.js",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "keywords": [
+    "timeline",
+    "bootstrap-vue",
+    "vuejs"
+  ],
+  "main": "dist/vue-bs-timeline.umd.js",
+  "module": "dist/vue-bs-timeline.js",
+  "unpkg": "dist/vue-bs-timeline.min.js",
+  "browser": {
+    "./sfc": "src/vue-bs-timeline.vue"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AngelinCalu/vue-bs-timeline.git"
