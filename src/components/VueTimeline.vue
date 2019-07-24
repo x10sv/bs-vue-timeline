@@ -139,7 +139,7 @@ cssVars({});
 .timeline-image img {
   position: relative;
   z-index: 100;
-  width: 90px;
+  width: 80px;
   height: auto;
 }
 
@@ -172,6 +172,15 @@ cssVars({});
   .timeline p {
     font-size: 14px;
   }
+
+  .timeline-image::before {
+    width: 80px;
+    height: 80px;
+  }
+  .timeline-image img {
+    width: 60px;
+  }
+
   .timeline-image {
     position: relative;
     left: -4.333333%;

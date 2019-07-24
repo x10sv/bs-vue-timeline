@@ -23,7 +23,6 @@ This is a simple timeline alternative build using `vue`, `boostrap-vue` and `mom
 - Customize the location of the images,
 - Create separator between sections in timeline (for example workplaces and studies),
 - Make duration separator between years and months a prop,
-- Make colors configurable,
 - Make it possible to use SVGs instead of images.
 
 ## Technologies

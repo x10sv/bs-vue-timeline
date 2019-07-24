@@ -1,14 +1,6 @@
 <template>
   <b-row no-gutters class="justify-content-around align-items-start timeline-nodes">
-    <b-col
-      cols="9"
-      md="5"
-      offset="3"
-      offset-md="0"
-      order="3"
-      order-md="1"
-      class="timeline-content"
-    >
+    <b-col cols="9" md="5" offset="2" offset-md="0" order="3" order-md="1" class="timeline-content">
       <h3 class="text-light" v-html="itemTimeline.title"></h3>
       <h2 v-html="itemTimeline.subtitle"></h2>
       <p v-html="itemTimeline.content"></p>
@@ -19,9 +11,9 @@
       offset="1"
       offset-md="0"
       order="1"
-      class="timeline-image text-sm-center mx-md-4"
+      class="timeline-image d-flex justify-content-center mx-md-4"
     >
-      <img v-bind:src="'img/' + itemTimeline.image" class="img-fluid" :alt="itemTimeline.title">
+      <img v-bind:src="'img/' + itemTimeline.image" :alt="itemTimeline.title">
     </b-col>
     <b-col
       cols="9"
