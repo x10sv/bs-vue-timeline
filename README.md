@@ -1,6 +1,6 @@
-# vue-bootstrap-timeline
+# vue-bs-timeline
 
-[![GitHub issues](https://img.shields.io/github/issues/AngelinCalu/vue-bootstrap-timeline.svg?style=flat-square)](https://github.com/AngelinCalu/vue-bootstrap-timeline/issues) [![GitHub license](https://img.shields.io/github/license/AngelinCalu/vue-bootstrap-timeline.svg?style=flat-square)](https://github.com/AngelinCalu/vue-bootstrap-timeline/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/AngelinCalu/vue-bs-timeline.svg?style=flat-square)](https://github.com/AngelinCalu/vue-bs-timeline/issues) [![GitHub license](https://img.shields.io/github/license/AngelinCalu/vue-bs-timeline.svg?style=flat-square)](https://github.com/AngelinCalu/vue-bs-timeline/blob/master/LICENSE)
 
 ## Table of contents
 
@@ -58,20 +58,20 @@ This project was made with:
 
 ## Demo
 
-You could check [Demo](https://codesandbox.io/s/github/AngelinCalu/vue-bootstrap-timeline) in a codesandbox.
+You could check [Demo](https://codesandbox.io/s/github/AngelinCalu/vue-bs-timeline) in a codesandbox.
 
 ## Installation
 
 **This is not yet implemented!**
 
 ```bash
-npm install vue-bootstrap-timeline --save
+npm install vue-bs-timeline --save
 ```
 
 or
 
 ```bash
-yarn add vue-bootstrap-timeline
+yarn add vue-bs-timeline
 ```
 
 ## Usage
@@ -80,12 +80,12 @@ In your `.vue` component:
 
 ```javascript
 <script>
-  import Timeline from 'vue-bootstrap-timeline'
+  import VueBSTimeline from 'vue-bs-timeline'
 
   export default {
     // ...
     components: {
-      Timeline
+      VueBSTimeline
     }
     // ...
   data: () => ({
@@ -123,7 +123,7 @@ In your `.vue` component:
 then, in your `<template>`:
 
 ```javascript
-<Timeline :timeline-items="timelineItems"/>
+<VueBSTimeline :timeline-items="timelineItems"/>
 ```
 
 To customize the colors you have available, at this moment, the following properties which could be overwritten like in the example below:

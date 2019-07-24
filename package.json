@@ -1,5 +1,5 @@
 {
-  "name": "vue-bootstrap-timeline",
+  "name": "vue-bs-timeline",
   "version": "0.1.0",
   "private": false,
   "description": "An alternative responsive boostrap timeline",
@@ -43,5 +43,13 @@
   },
   "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
   "keywords": ["timeline", "bootstrap-vue", "vuejs"],
-  "description": "boostrap-vue-timeline"
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelinCalu/vue-bs-timeline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AngelinCalu/vue-bs-timeline/issues"
+  },
+  "homepage": "https://github.com/AngelinCalu/vue-bs-timeline"
 }

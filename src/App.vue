@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <Timeline :timeline-items="timelineItems"/>
+    <VueBSTimeline :timeline-items="timelineItems"/>
   </div>
 </template>
 
 <script>
-import Timeline from "./components/Timeline";
+import VueBSTimeline from "./components/VueBSTimeline";
 
 export default {
   name: "App",
   components: {
-    Timeline
+    VueBSTimeline
   },
 
   data: () => ({

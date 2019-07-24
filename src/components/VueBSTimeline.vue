@@ -15,7 +15,7 @@ import TimelineItem from "./TimelineItem.vue";
 import cssVars from 'css-vars-ponyfill';
 
 export default {
-  name: "Timeline",
+  name: "VueBSTimeline",
   components: { TimelineItem },
   props: {
     timelineItems: {
