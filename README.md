@@ -20,13 +20,7 @@ This is a simple timeline alternative build using `vue`, `boostrap-vue` and `mom
 
 ### Future Plans:
 
-**Before initial release**
-
-- Make it usable in other projects using `npm` and `yarn`
 - Customize the location of the images,
-
-**Later on**
-
 - Create separator between sections in timeline (for example workplaces and studies),
 - Make duration separator between years and months a prop,
 - Make colors configurable,
@@ -58,15 +52,13 @@ This project was made with:
 
 ## Demo
 
-** Demo link is broken now **
-You could check [Demo](https://codesandbox.io/s/github/AngelinCalu/bs-vue-timeline) in a codesandbox.
+You can see it in action [here](https://1fppb.codesandbox.io/).
+You could check [here](https://codesandbox.io/s/github/AngelinCalu/bs-vue-timeline-demo) how the Demo was implemented in the codesandbox.
 
 ## Installation
 
-**This is not yet implemented!**
-
 ```bash
-npm install bs-vue-timeline --save
+npm i bs-vue-timeline --save
 ```
 
 or
