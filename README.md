@@ -24,6 +24,7 @@ This is a simple timeline alternative build using `vue`, `boostrap-vue` and `mom
 - Create separator between sections in timeline (for example workplaces and studies),
 - Make duration separator between years and months a prop,
 - Make it possible to use SVGs instead of images.
+- Maybe add animation?
 
 ## Technologies
 
