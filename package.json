@@ -1,7 +1,10 @@
 {
   "name": "bootstrap-vue-timeline",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "An alternative responsive boostrap timeline",
+  "author": "Angelin Calu",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -27,10 +30,7 @@
     "env": {
       "node": true
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
+    "extends": ["plugin:vue/essential", "eslint:recommended"],
     "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
@@ -41,15 +41,7 @@
       "autoprefixer": {}
     }
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "keywords": [
-    "timeline",
-    "bootstrap-vue",
-    "vuejs"
-  ],
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"],
+  "keywords": ["timeline", "bootstrap-vue", "vuejs"],
   "description": "boostrap-vue-timeline"
 }
