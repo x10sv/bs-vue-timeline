@@ -8,8 +8,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "build": "rimraf ./dist && webpack --config ./webpack.config.js"
+    "build": "bili --name index --plugin vue --vue.css false"
   },
+  "files": ["dist/*"],
   "dependencies": {
     "bootstrap-vue": "2.0.0-rc.27",
     "css-vars-ponyfill": "2.0.2",
