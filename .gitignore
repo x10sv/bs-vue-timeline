@@ -1,5 +1,5 @@
-node_modules
-public
-dist
+node_modules/
+public/
+dist/
 src/App.vue
 src/main.js
