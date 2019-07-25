@@ -1,6 +1,6 @@
-# bs-vue-timeline
+# Bootstrap-Vue Timeline
 
-[![GitHub issues](https://img.shields.io/github/issues/AngelinCalu/bs-vue-timeline.svg?style=flat-square)](https://github.com/AngelinCalu/bs-vue-timeline/issues) [![GitHub license](https://img.shields.io/github/license/AngelinCalu/bs-vue-timeline.svg?style=flat-square)](https://github.com/AngelinCalu/bs-vue-timeline/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/x10sv/bs-vue-timeline.svg?style=flat-square)](https://github.com/x10sv/bs-vue-timeline/issues) [![GitHub license](https://img.shields.io/github/license/x10sv/bs-vue-timeline.svg?style=flat-square)](https://github.com/x10sv/bs-vue-timeline/blob/master/LICENSE)
 
 ## Table of contents
 
@@ -10,13 +10,14 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Props](#props)
-- [Known Issues](#known-issues)
+- [Compatibility](#combatibility)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## General info
 
 This is a simple timeline alternative build using `vue`, `boostrap-vue` and `moment.js`
+We've also pulled in `css-vars-ponyfill` to improve cross-browser compatibility.
 
 ### Future Plans:
 
@@ -24,7 +25,7 @@ This is a simple timeline alternative build using `vue`, `boostrap-vue` and `mom
 - Create separator between sections in timeline (for example workplaces and studies),
 - Make duration separator between years and months a prop,
 - Make it possible to use SVGs instead of images.
-- Maybe add animation?
+- Maybe add animations?
 
 ## Technologies
 
@@ -53,7 +54,7 @@ This project was made with:
 ## Demo
 
 You can see it in action [here](https://1fppb.codesandbox.io/).
-You could check [here](https://codesandbox.io/s/github/AngelinCalu/bs-vue-timeline-demo) how the Demo was implemented in the codesandbox.
+You could check [here](https://codesandbox.io/s/github/x10sv/bs-vue-timeline-demo) how the Demo was implemented in the codesandbox.
 
 ## Installation
 
@@ -119,7 +120,7 @@ then, in your `<template>`:
 <VueTimeline :timeline-items="timelineItems"/>
 ```
 
-To customize the colors you have available, at this moment, the following properties which could be overwritten like in the example below:
+To customize the colors you have can change the following properties, which could be overwritten like in the example below:
 
 ```html
 <style>
@@ -139,9 +140,15 @@ To customize the colors you have available, at this moment, the following proper
 
 **Soon!**
 
-## Known issues
+## Compatibility
 
-- Compatibility accross browsers was not checked!
+- Compatibility accross browsers was not checked thoroughly, but expected browser compatibility is shown below.
+
+| IE  | Edge | Chrome | Firefox | Safari |
+| --- | ---- | ------ | ------- | ------ |
+| 9+  | 12+  | 19+    | 6+      | 6+     |
+
+If you encounter any problems please open an issue or submit a pull request.
 
 ## Contributing
 
@@ -153,4 +160,4 @@ Please make sure to test changes appropriately.
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-Copyright (c) 2019-present, Angelin Calu
+Copyright (c) 2019, [Angelin Calu](https://github.com/AngelinCalu/)
