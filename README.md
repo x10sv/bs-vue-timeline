@@ -23,7 +23,6 @@ We've also pulled in `css-vars-ponyfill` to improve cross-browser compatibility.
 
 - Customize the location of the images,
 - Create separator between sections in timeline (for example workplaces and studies),
-- Make duration separator between years and months a prop,
 - Make it possible to use SVGs instead of images.
 - Maybe add animations?
 
@@ -138,11 +137,15 @@ To customize the colors you have can change the following properties, which coul
 
 ## Props
 
-**Soon!**
+The following props can be passed to the component:
+
+| Prop      | Description                                                  | Default |
+| --------- | ------------------------------------------------------------ | ------- |
+| separator | Used to separate the years and months in calculated duration | ", "    |
 
 ## Compatibility
 
-- Compatibility accross browsers was not checked thoroughly, but expected browser compatibility is shown below.
+Compatibility accross browsers was not checked thoroughly, but expected browser compatibility is shown below.
 
 | IE  | Edge | Chrome | Firefox | Safari |
 | --- | ---- | ------ | ------- | ------ |

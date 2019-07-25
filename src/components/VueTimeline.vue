@@ -5,6 +5,7 @@
         v-for="(itemTimeline, timelineIndex) in timelineItems"
         :key="timelineIndex"
         :item-timeline="itemTimeline"
+        :separator="separator"
       />
     </div>
   </div>
@@ -18,6 +19,7 @@ export default {
   name: "VueTimeline",
   components: { TimelineItem },
   props: {
+    separator: String,
     timelineItems: {
       type: Array,
       default: () => []
@@ -140,7 +142,9 @@ cssVars({});
   position: relative;
   z-index: 100;
   width: 80px;
+  max-height: 80px;
   height: auto;
+  object-fit: contain;
 }
 
 /*small device style*/
@@ -179,6 +183,7 @@ cssVars({});
   }
   .timeline-image img {
     width: 60px;
+    max-height: 60px;
   }
 
   .timeline-image {

@@ -42,6 +42,10 @@ export default {
     itemTimeline: {
       type: Object,
       default: () => ({})
+    },
+    separator: {
+      type: String,
+      default: ", "
     }
   },
 
@@ -52,10 +56,10 @@ export default {
       var yearsDiff = moment(to).diff(moment(from), "year");
       var monthsDiff = moment(to).diff(moment(from), "months") - yearsDiff * 12; //substract the full years as months
 
-      let separator = "";
+      let UsedSeparator = "";
 
       if (yearsDiff > 0 && monthsDiff > 0) {
-        separator = ", ";
+        UsedSeparator = this.separator;
       }
 
       // Show years only if the duration is over one year and handle the pluralisation
@@ -67,9 +71,9 @@ export default {
 
       // Show months only if the months are over 1 and handle the pluralisation
       if (monthsDiff === 1) {
-        formatedTime = formatedTime + separator + "1 month";
+        formatedTime = formatedTime + UsedSeparator + "1 month";
       } else if (monthsDiff > 1) {
-        formatedTime = formatedTime + separator + monthsDiff + " months";
+        formatedTime = formatedTime + UsedSeparator + monthsDiff + " months";
       }
 
       formatedTime = formatedTime + "</span>";
