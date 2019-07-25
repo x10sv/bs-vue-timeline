@@ -140,11 +140,11 @@ To customize the colors you have can change the following properties, which coul
 
 The following props can be passed to the component:
 
-| Prop               | Description                                                                                                                        | Type    | Default |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- | ------- | ------- |
-| separator          | Used to separate the years and months in calculated duration                                                                       | String  | ", "    |
-| :individualClasses | Will add (additional) individual classes for all records, _The classes will be `.bvt-cust-'{order number}`, e.g.: `.bvt-custom-1`_ | Boolean | false   |
-|                    |                                                                                                                                    |         |         |
+| Prop               | Description                                                                                                                                                                            | Type    | Default |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------- |
+| separator          | Used to separate the years and months in calculated duration                                                                                                                           | String  | ", "    |
+| :individualClasses | Will add (additional) individual classes for all records so that the user can further customize entries. <br> _The classes will be `.bvt-cust-'{order number}`, e.g.: `.bvt-custom-1`_ | Boolean | false   |
+|                    |                                                                                                                                                                                        |         |         |
 
 **Important:** Vue requires you to pass numbers and boolean values using `v-bind`, any props that require a number or bool should use `v-bind:` or the colon (`:`) shorthand.
 
