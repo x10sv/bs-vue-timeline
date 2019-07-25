@@ -115,8 +115,8 @@ In your `.vue` component:
 
 then, in your `<template>`:
 
-```javascript
-<VueTimeline :timeline-items="timelineItems"/>
+```html
+<VueTimeline :timeline-items="timelineItems" />
 ```
 
 To customize the colors you have can change the following properties, which could be overwritten like in the example below:
@@ -142,6 +142,12 @@ The following props can be passed to the component:
 | Prop      | Description                                                  | Default |
 | --------- | ------------------------------------------------------------ | ------- |
 | separator | Used to separate the years and months in calculated duration | ", "    |
+
+**Props Example:**
+
+```html
+<VueTimeline separator=" & " :timeline-items="timelineItems" />
+```
 
 ## Compatibility
 
