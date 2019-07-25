@@ -1,4 +1,4 @@
-# Bootstrap-Vue Timeline
+# Bootstrap-Vue Timeline v0.1.4
 
 [![GitHub issues](https://img.shields.io/github/issues/x10sv/bs-vue-timeline.svg?style=flat-square)](https://github.com/x10sv/bs-vue-timeline/issues) [![GitHub license](https://img.shields.io/github/license/x10sv/bs-vue-timeline.svg?style=flat-square)](https://github.com/x10sv/bs-vue-timeline/blob/master/LICENSE)
 
@@ -17,6 +17,7 @@
 ## General info
 
 This is a simple timeline alternative build using `vue`, `boostrap-vue` and `moment.js`
+
 We've also pulled in `css-vars-ponyfill` to improve cross-browser compatibility.
 
 ### Future Plans:

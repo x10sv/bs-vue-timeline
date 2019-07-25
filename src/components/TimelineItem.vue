@@ -56,6 +56,8 @@ export default {
       var yearsDiff = moment(to).diff(moment(from), "year");
       var monthsDiff = moment(to).diff(moment(from), "months") - yearsDiff * 12; //substract the full years as months
 
+      // var momentDiff = moment(to).from(moment(from), true)
+
       let UsedSeparator = "";
 
       if (yearsDiff > 0 && monthsDiff > 0) {
