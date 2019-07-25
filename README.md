@@ -140,14 +140,23 @@ To customize the colors you have can change the following properties, which coul
 
 The following props can be passed to the component:
 
-| Prop      | Description                                                  | Default |
-| --------- | ------------------------------------------------------------ | ------- |
-| separator | Used to separate the years and months in calculated duration | ", "    |
+| Prop               | Description                                                  | Type    | Default |
+| ------------------ | ------------------------------------------------------------ | ------- | ------- |
+| separator          | Used to separate the years and months in calculated duration | String  | ", "    |
+| :individualClasses | Will add (additional) individual classes for all records,    | Boolean | false   |
+|                    | _The classes will be `.bvt-cust-'{order number}`_            |         |         |
+|                    |                                                              |         |         |
+
+**Important:** Vue requires you to pass numbers and boolean values using `v-bind`, any props that require a number or bool should use `v-bind:` or the colon (`:`) shorthand.
 
 **Props Example:**
 
 ```html
-<VueTimeline separator=" & " :timeline-items="timelineItems" />
+<VueTimeline
+  :individualClasses="true"
+  separator=" & "
+  :timeline-items="timelineItems"
+/>
 ```
 
 ## Compatibility

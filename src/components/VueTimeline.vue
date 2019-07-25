@@ -6,6 +6,7 @@
         :key="timelineIndex"
         :item-timeline="itemTimeline"
         :separator="separator"
+        :customClass="individualClasses ? 'bvt-cust-' + (timelineIndex + 1) : ''"
       />
     </div>
   </div>
@@ -19,7 +20,15 @@ export default {
   name: "VueTimeline",
   components: { TimelineItem },
   props: {
-    separator: String,
+    separator: {
+      type: String,
+      default: ", "
+    },
+    individualClasses: {
+      type: Boolean,
+      default: false
+    },
+    customClass: String,
     timelineItems: {
       type: Array,
       default: () => []

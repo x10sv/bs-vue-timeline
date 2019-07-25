@@ -1,5 +1,9 @@
 <template>
-  <b-row no-gutters class="justify-content-around align-items-start timeline-nodes">
+  <b-row
+    no-gutters
+    class="justify-content-around align-items-start timeline-nodes"
+    :class="customClass"
+  >
     <b-col cols="9" md="5" offset="2" offset-md="0" order="3" order-md="1" class="timeline-content">
       <h3 class="text-light" v-html="itemTimeline.title"></h3>
       <h2 v-html="itemTimeline.subtitle"></h2>
@@ -39,13 +43,11 @@ import moment from "moment";
 export default {
   name: "TimelineItem",
   props: {
+    customClass: String,
+    separator: String,
     itemTimeline: {
       type: Object,
       default: () => ({})
-    },
-    separator: {
-      type: String,
-      default: ", "
     }
   },
 
