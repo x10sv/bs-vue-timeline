@@ -54,7 +54,7 @@ This project was made with:
 ## Demo
 
 You can see it in action [here](https://1fppb.codesandbox.io/).
-You could check [here](https://codesandbox.io/s/github/x10sv/bs-vue-timeline-demo) how the Demo was implemented in the codesandbox.
+You could check [here](https://codesandbox.io/s/github/AngelinCalu/bs-vue-timeline-demo) how the Demo was implemented in the codesandbox.
 
 ## Installation
 
