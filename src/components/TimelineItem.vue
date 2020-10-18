@@ -6,7 +6,7 @@
   >
     <b-col cols="9" md="5" offset="2" offset-md="0" order="3" order-md="1" class="timeline-content">
       <slot name="title"><h3 class="text-light" v-html="itemTimeline.title"></h3></slot>
-      <slot name="subtitle"><h2 v-html="itemTimeline.subtitle"></h2></subtitle>
+      <slot name="subtitle"><h2 v-html="itemTimeline.subtitle"></h2></slot>
       <slot><p v-html="itemTimeline.content"></p></slot>
     </b-col>
     <b-col
@@ -29,9 +29,9 @@
       class="py-3 timeline-date"
     >
       {{ itemTimeline.from | FormatedDate }} - {{ itemTimeline.to | FormatedDate }}
-      <time
+      <slot name="time"><time
         v-html="TimeDifference(itemTimeline.from, itemTimeline.to)"
-      ></time>
+      ></time></slot>
     </b-col>
   </b-row>
 </template>
