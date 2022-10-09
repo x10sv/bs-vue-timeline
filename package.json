@@ -18,7 +18,7 @@
   "dependencies": {
     "bootstrap-vue": "2.0.0-rc.27",
     "css-vars-ponyfill": "2.0.2",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "vue": "^2.5.22"
   },
   "devDependencies": {
