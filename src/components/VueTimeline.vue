@@ -1,13 +1,15 @@
 <template>
   <div class="container-fluid">
     <div class="timeline">
-      <TimelineItem
-        v-for="(itemTimeline, timelineIndex) in timelineItems"
-        :key="timelineIndex"
-        :item-timeline="itemTimeline"
-        :separator="separator"
-        :customClass="individualClasses ? 'bvt-cust-' + (timelineIndex + 1) : ''"
-      />
+      <slot>
+        <TimelineItem
+          v-for="(itemTimeline, timelineIndex) in timelineItems"
+          :key="timelineIndex"
+          :item-timeline="itemTimeline"
+          :separator="separator"
+          :customClass="individualClasses ? 'bvt-cust-' + (timelineIndex + 1) : ''"
+        />
+      </slot>
     </div>
   </div>
 </template>

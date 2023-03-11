@@ -5,9 +5,9 @@
     :class="customClass"
   >
     <b-col cols="9" md="5" offset="2" offset-md="0" order="3" order-md="1" class="timeline-content">
-      <h3 class="text-light" v-html="itemTimeline.title"></h3>
-      <h2 v-html="itemTimeline.subtitle"></h2>
-      <p v-html="itemTimeline.content"></p>
+      <slot name="title"><h3 class="text-light" v-html="itemTimeline.title"></h3></slot>
+      <slot name="subtitle"><h2 v-html="itemTimeline.subtitle"></h2></slot>
+      <slot><p v-html="itemTimeline.content"></p></slot>
     </b-col>
     <b-col
       cols="1"
@@ -17,7 +17,7 @@
       order="1"
       class="timeline-image d-flex justify-content-center mx-md-4"
     >
-      <img v-bind:src="'img/' + itemTimeline.image" :alt="itemTimeline.title">
+      <slot name="icon"><img v-bind:src="'img/' + itemTimeline.image" :alt="itemTimeline.title"></slot>
     </b-col>
     <b-col
       cols="9"
@@ -29,9 +29,9 @@
       class="py-3 timeline-date"
     >
       {{ itemTimeline.from | FormatedDate }} - {{ itemTimeline.to | FormatedDate }}
-      <time
+      <slot name="time"><time
         v-html="TimeDifference(itemTimeline.from, itemTimeline.to)"
-      ></time>
+      ></time></slot>
     </b-col>
   </b-row>
 </template>
